@@ -1,0 +1,105 @@
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 40%;
+  height: 100%;
+
+  color: #ccc;
+
+  background-color: rgba(110, 110, 110, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  z-index: 1;
+
+  padding: 3rem 2rem;
+  overflow-y: scroll;
+
+  scrollbar-width: none;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 3rem;
+
+    input {
+      width: 80%;
+      height: 2rem;
+
+      padding-bottom: 0.5rem;
+
+      border: transparent;
+      border-bottom: 1px solid #ccc;
+      background-color: transparent;
+
+      color: var(--text-color);
+      font-size: 1.1rem;
+
+      outline: none;
+
+      &::placeholder {
+        color: var(--text-color);
+        font-size: 1.15rem;
+        font-family: var(--font-family);
+        letter-spacing: 1.5px;
+      }
+    }
+
+    .search-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      padding: 1.85rem;
+      border-radius: 0;
+      border: none;
+      outline: none;
+
+      background-color: var(--btn-color);
+      color: white;
+
+      cursor: pointer;
+
+      svg {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .title {
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+
+  ul {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0 0 1rem 0;
+
+    border-bottom: 1px solid #ccc;
+
+    li {
+      margin: 2rem 0;
+    }
+
+    .city {
+        cursor: pointer;
+        transition: 0.25s;
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+}

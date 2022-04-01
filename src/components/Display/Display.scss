@@ -1,0 +1,46 @@
+.display {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  padding: 2rem 3rem 4rem 3rem;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .temp,
+    .city-time,
+    .weather-icon {
+      margin: 0 1rem;
+    }
+
+    .city-time h2 {
+      margin: 0;
+      margin-bottom: 0.2em;
+      font-size: 2.5rem;
+    }
+
+    .temp {
+      font-size: 7rem;
+      margin: 0;
+    }
+
+    .weather-icon {
+      img {
+        display: block;
+        width: 40px;
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}

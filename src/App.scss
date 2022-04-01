@@ -31,7 +31,7 @@
   color: var(--text-color);
   font-family: var(--font-family);
 
-  transition: 500ms;
+  transition: background-image 500ms ease-in-out;
 
   &::before {
     content: "";
@@ -50,7 +50,7 @@
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
 
     .panel,
     .display {
@@ -76,10 +76,10 @@
     }
 
     .display {
-      justify-content: flex-start;
+      justify-content: center;
       flex-direction: column;
       padding: 2rem;
-      
+      min-height: 30vh;
     }
   }
 

@@ -18,6 +18,10 @@
     justify-content: center;
     align-items: center;
 
+    .city {
+      display: flex;
+    }
+
     .temp,
     .city-time,
     .weather-icon {
@@ -41,6 +45,12 @@
         width: 40px;
         margin: 0.2rem 0;
       }
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
     }
   }
 }

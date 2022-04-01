@@ -1,7 +1,7 @@
 import dayCloudy from "../assets/dayBackgrounds/day-cloudy.jpg";
 import dayRainy from "./dayBackgrounds/day-rainy.jpg";
 import daySnow from "./dayBackgrounds/day-snow.jpg";
-import daySunny1 from "./dayBackgrounds/day-sunny1.jpg";
+import daySunny1 from "./dayBackgrounds/day-sunny-1.jpg";
 
 import nightCloudy from "./nightBackgrounds/night-cloudy.jpg";
 import nightRain from "./nightBackgrounds/night-rain.jpg";

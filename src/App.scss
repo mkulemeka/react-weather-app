@@ -50,7 +50,7 @@
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 
     .panel,
     .display {
@@ -58,14 +58,26 @@
       top: initial;
 
       width: 100%;
+
+      .temp {
+        font-size: 5rem;
+      }
+
+      .city-time h2 {
+        font-size: 2rem;
+      }
+
+      .weather-icon {
+        img {
+          width: 35px;
+          margin: 0;
+        }
+      }
     }
 
     .display {
-      justify-content: center;
-      //align-items: center;
+      justify-content: flex-start;
       flex-direction: column;
-
-      min-height: 40vh;
       padding: 2rem;
       
     }

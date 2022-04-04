@@ -9,7 +9,7 @@ const App = () => {
   const [inputValue, setInputValue] = useState("London");
   const [isLoading, setIsLoading] = useState(true);
 
-  const url = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${inputValue}`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${inputValue}`;
 
   useEffect(() => {
     fetch(url)

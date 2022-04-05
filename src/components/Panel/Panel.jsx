@@ -44,6 +44,9 @@ const Panel = ({ city, search, setSearch, setInputValue }) => {
           <li className="detail">
             <span>Wind</span> <span>{current.wind_kph} kph</span>
           </li>
+          <li className='detail'>
+            <span>Rain</span> <span>{current.precip_mm} mm</span>
+          </li>
         </ul>
       </div>
     </div>

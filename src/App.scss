@@ -32,6 +32,7 @@
   font-family: var(--font-family);
 
   transition: background-image 500ms ease-in-out;
+  -moz-transition: background-image 500ms ease-in-out;
 
   &::before {
     content: "";

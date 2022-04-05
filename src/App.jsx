@@ -6,7 +6,7 @@ import { backgrounds } from "./assets";
 const App = () => {
   const [city, setCity] = useState({});
   const [search, setSearch] = useState("");
-  const [inputValue, setInputValue] = useState("London");
+  const [inputValue, setInputValue] = useState("Philadelphia");
   const [isLoading, setIsLoading] = useState(true);
 
   const url = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${inputValue}`;
@@ -95,6 +95,7 @@ const App = () => {
           style={{ backgroundImage: "url(" + background() + ")" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
           {!isLoading && (
             <>
